@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
   
-  .children-element {
+.children-element {
     width: 200px;
     height: 50px;
     background-color: rgb(177, 174, 174); 
     border: 1px solid black;
     margin-bottom: 10px; 
-  }
+}
   
