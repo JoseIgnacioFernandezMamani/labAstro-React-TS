@@ -1,18 +1,19 @@
 ---
-import Button from "../components/Button.jsx";
 import Layout from "../layouts/Layout.astro";
-
-const someProps = {
-	count: 0,
-};
+import RenderBuyList from "../components/RenderBuyList.astro";
+const buyList = [
+	'Controller',
+	'Bread',
+	'Water',
+	'Notebook',
+	'Math Book',
+	'Choco Bar',
+	'Milk'
+]
 ---
 
-<Layout title="my page">
-
-	<h1>Exercise 1</h1>
-	<br>
-	<Button {...someProps} client:visible>
-		{someProps.count}
-	</Button>
-	 
+<Layout title="my page exercise 2">
+	<h1>exercise 2</h1>
+	<h2>Compras de la semana</h2>
+	<RenderBuyList items={buyList} ></RenderBuyList>
 </Layout>
