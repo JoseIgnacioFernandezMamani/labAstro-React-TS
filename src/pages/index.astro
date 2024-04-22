@@ -1,19 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import RenderBuyList from "../components/RenderBuyList.astro";
-const buyList = [
-	'Controller',
-	'Bread',
-	'Water',
-	'Notebook',
-	'Math Book',
-	'Choco Bar',
-	'Milk'
-]
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="my page exercise 2">
-	<h1>exercise 2</h1>
-	<h2>Compras de la semana</h2>
-	<RenderBuyList items={buyList} ></RenderBuyList>
+  <h1>exercise 3</h1>
+  <Card />
+
 </Layout>
